@@ -65,18 +65,14 @@ public class HomeWork3_3 {
 		for (int c = 0; c < luckNumbers.length;) {
 			int idx = (int) (Math.random() * ar.length);
 			boolean isChosen = false; // 是否重複，false->不重複
-			/*
-			 * 檢查是否有重複的數字，如果有重複isChosen = true 檢查到重複數字後跳出迴圈
-			 */
+			 //檢查是否有重複的數字，如果有重複isChosen = true 檢查到重複數字後跳出迴圈
 			for (int j = 0; j < c; j++) {
 				if (luckNumbers[j] == ar[idx]) {
 					isChosen = true;
 					break;
 				}
 			}
-			/*
-			 * 如果檢查過後仍然不重複(isChosen = false) 將數字放進小陣列
-			 */
+			 //如果檢查過後仍然不重複(isChosen = false) 將數字放進小陣列
 			if (!isChosen) {
 				luckNumbers[c] = ar[idx];
 				c++;
