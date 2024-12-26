@@ -14,6 +14,7 @@ public class ArrayAnalyzer {
 			if (array[c] > avg)
 				System.out.print(array[c] + " ");
 		}
+		//
 	}
 
 }
