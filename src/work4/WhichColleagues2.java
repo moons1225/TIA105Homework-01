@@ -13,7 +13,7 @@ public class WhichColleagues2 {
 
 		// 呼叫方法來取得符合條件的員工編號
 		getColleagueId(amount, colleague);
-
+		scanner.close();
 	}
 
 	// 類別方法：根據可借金額篩選出符合條件的員工編號，並列印結果
