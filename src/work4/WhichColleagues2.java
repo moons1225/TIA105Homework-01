@@ -31,4 +31,5 @@ public class WhichColleagues2 {
 		System.out.print("共 " + count + " 人!");
 	}
 
+
 }

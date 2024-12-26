@@ -1,6 +1,5 @@
 package work4;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class WhichColleagues {
@@ -20,6 +19,8 @@ public class WhichColleagues {
 		
 		// 呼叫列印結果的方法
 		printTotal(empId, sum);
+		
+		scanner.close();
 	}
 
 	//類別方法：取得可以借的員工人數(也就是小陣列的長度)
