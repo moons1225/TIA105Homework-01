@@ -10,10 +10,10 @@ public class StringReverser {
 		String str = "Hello World";
 		
 		 // 取得字串的長度
-		int len = str.length();
+//		int len = str.length();
 		
 		// 建立一個字元陣列，用來存放字串的每個字元
-		char[] charArray = new char[len];
+		char[] charArray = new char[str.length()];
 		
 		 // 將字串的每個字元逐一存入字元陣列
 		for (int i = 0; i < charArray.length; i++) 
