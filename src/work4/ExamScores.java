@@ -13,7 +13,7 @@ public class ExamScores {
 				};
 		
 		//宣告一個陣列來存放每次考試最高分的學生編號
-		int[] topStudentIds = new int[5];
+		int[] topStudentIds = new int[6];
 		
 		for (int i = 0; i < topStudentIds.length; i++) {
 			topStudentIds[i] = findMaxIndex(examScores[i]);
