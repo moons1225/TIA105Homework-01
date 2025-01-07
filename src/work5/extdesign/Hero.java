@@ -6,6 +6,8 @@ public abstract class Hero {
 	private double exp;
 
 	private IAttackable attackBehavior;
+	private IDefendable defendBehavior;
+	private IMovable moveBehavior;
 
 	public Hero(String name, int level, double exp) {
 		this.name = name;
@@ -25,5 +27,31 @@ public abstract class Hero {
 			System.out.println(name + " 尚未設定攻擊行為！");
 		}
 	}
+	
+	public void setDefendBehavior(IDefendable defendBehavior) {
+		this.defendBehavior = defendBehavior;
+	}
+	
+	public void defend() {
+		if(defendBehavior != null) {
+			System.out.print(name + " ");
+			this.defendBehavior.defend();
+		}else {
+			System.out.println(name + " 尚未設定防禦行為！");
+		}
+	}
 
+	public void setMoveBehavior(IMovable moveBehavior) {
+		this.moveBehavior = moveBehavior;
+	}
+	
+	public void move() {
+		if(moveBehavior != null) {
+			System.out.print(name + " ");
+			this.moveBehavior.move();
+		}else {
+			System.out.println(name + " 尚未設定移動行為！");
+		}
+	}
+	
 }
