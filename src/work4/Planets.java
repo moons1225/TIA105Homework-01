@@ -11,17 +11,26 @@ public class Planets {
 
 			// 內層迴圈：逐一檢查每個行星名稱中的每個字母
 			for (int i = 0; i < planets[j].length(); i++) {
-				if (planets[j].charAt(i) == 'a') {
-					count += 1;
-				} else if (planets[j].charAt(i) == 'e') {
-					count += 1;
-				} else if (planets[j].charAt(i) == 'i') {
-					count += 1;
-				} else if (planets[j].charAt(i) == 'o') {
-					count += 1;
-				} else if (planets[j].charAt(i) == 'u') {
+				switch(planets[j].charAt(i)) {
+				case 'a':
+				case 'e':
+				case 'i':	
+				case 'o':
+				case 'u':
 					count += 1;
 				}
+				
+//				if (planets[j].charAt(i) == 'a') {
+//					count += 1;
+//				} else if (planets[j].charAt(i) == 'e') {
+//					count += 1;
+//				} else if (planets[j].charAt(i) == 'i') {
+//					count += 1;
+//				} else if (planets[j].charAt(i) == 'o') {
+//					count += 1;
+//				} else if (planets[j].charAt(i) == 'u') {
+//					count += 1;
+//				}
 			}
 		}
 		System.out.println("總共：" + count + " 個 a e i o u 母音");

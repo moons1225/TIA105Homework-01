@@ -26,20 +26,23 @@ public class DayOfYear {
 		if (isLeapYear) {
 			daysInMonth[1] = 29;
 		}
+		//檢查年份是否有效
+		if (year < 1 ) {
+			System.out.println("請輸入正確年份");
+			return false;
+		}
 		// 檢查月份是否有效
-		boolean checkMonth = true;
 		if (month < 1 || month > 12) {
 			System.out.println("請輸入正確月份");
-			checkMonth = false;
+			return false;
 		}
 		// 檢查日期是否有效
-		boolean checkDay = true;
 		if (day < 1 || day > daysInMonth[month - 1]) {
 			System.out.println("請輸入正確日期");
-			checkDay = false;
+			return false;
 		}
 		// 返回檢查結果
-		return checkMonth && checkDay;
+		return true;
 	}
 
 	// 方法 計算該日期是該年的第幾天
