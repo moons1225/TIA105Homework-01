@@ -1,4 +1,4 @@
-package work5.homeworkext;
+package work5.HomeworkExt;
 
 public class OilPastel extends Pan {
 	private String color; 

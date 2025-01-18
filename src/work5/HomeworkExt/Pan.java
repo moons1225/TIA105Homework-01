@@ -1,4 +1,4 @@
-package work5.homeworkext;
+package work5.HomeworkExt;
 
 public abstract class Pan {
 	private String brand;
